@@ -1,0 +1,22 @@
+@startuml
+
+object "<u>SoftwareEngineering:Course</u>" as SWE{
+    name = "CS5800 - Advanced Software Engineering"
+}
+
+object "<u>Nima:Instructor</u>" as prof{
+    firstName = "Nima"
+    lastName = "Davarpanah"
+    officeNumber = "3-2636"
+}
+
+object "<u>CleanCode:TextBook</u>" as txtbk{
+    title = "CleanCode:A Handbook of Agile Software Craftsmanship"
+    author = "Robert Cecil Martin"
+    publisher = "Pearson"
+}
+
+SWE o-- prof
+SWE o-- txtbk
+
+@enduml
